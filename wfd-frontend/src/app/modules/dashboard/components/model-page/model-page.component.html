@@ -1,0 +1,56 @@
+<div class="upload-section">
+  <div style="text-align: center">
+    <br />
+    <h2 class="tab-heading">Upload an Image or a Video</h2>
+    <br />
+    <main>
+      <div style="text-align: center">
+        <!-- Uploader Dropzone -->
+        <div class="section-container">
+          <div class="btn-container">
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*, video/*"
+              (change)="onFileSelected($event)"
+            />
+            <img class="upload-btn" src="assets/cloud-upload.svg" />
+            <br />
+            <span class="upload-text">Click the button to upload</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+<hr class="section-line" />
+<div class="result-section">
+  <div style="text-align: center">
+    <span class="tab-heading">Result</span>
+    <br />
+    <br />
+    <main>
+      <div style="text-align: center">
+        <!-- Uploader Dropzone -->
+        <div class="result-container">
+          <div *ngIf="isRecieved">
+            <img
+              *ngIf="fileType === 'IMAGE'"
+              [src]="result"
+              alt="Image"
+              width="100%"
+              height="100%"
+            />
+            <video
+              *ngIf="fileType === 'VIDEO'"
+              [src]="result"
+              width="100%"
+              height="100%"
+              controls
+            ></video>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

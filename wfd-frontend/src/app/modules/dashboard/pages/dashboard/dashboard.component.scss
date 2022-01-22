@@ -1,0 +1,48 @@
+.header {
+  //   display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5em;
+  line-height: 4.5em;
+  z-index: 2;
+  letter-spacing: 0.5px;
+  font-size: 0.9em;
+  // background: linear-gradient(30deg, #245169 30%,#306e8f 85%);
+  /* background: #183f6f; */
+  background: #1a1450;
+  border-bottom: 1px solid #433f70;
+  position: fixed;
+  box-shadow: 0 5px 5px -6px grey;
+}
+
+.fire-icon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.header-text {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 500;
+  vertical-align: text-bottom;
+}
+
+.page {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 3.5em;
+  // background-color: #1a1450;
+  // background-color: #1a1450;
+  // background-image: linear-gradient(160deg, #00aa98 0%, #00aa98 100%);
+  padding-bottom: 20px;
+  height: 100%;
+}
+
+.tab-container {
+  margin: 20px 2% 0 2%;
+}
+

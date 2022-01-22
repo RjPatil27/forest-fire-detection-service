@@ -1,0 +1,89 @@
+<div class="scenario-container">
+  <mat-accordion multi>
+    <mat-expansion-panel [expanded]="true">
+      <mat-expansion-panel-header>
+        <mat-panel-title> First Batch of Images </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let image of firstBatch; index as i">
+          <img mat-card-image [src]="image.src" alt="Forest Image" />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let result of firstResult; index as i">
+          <img mat-card-image [src]="result.src" alt="Result Image" />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div>
+        <hr class="horizontal-line" />
+      </div>
+      <span class="button-container">
+        <button
+          type="button"
+          mat-raised-button
+          color="primary"
+          (click)="sendImages('first-batch')"
+        >
+          Send
+        </button>
+      </span>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Second Batch of Images </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let image of secondBatch; index as i">
+          <img mat-card-image [src]="image.src" alt="Forest Image" />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let result of secondResult; index as i">
+          <img mat-card-image [src]="result.src" alt="Forest Image" />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div>
+        <hr class="horizontal-line" />
+      </div>
+      <span class="button-container">
+        <button
+          type="button"
+          mat-raised-button
+          color="primary"
+          (click)="sendImages('second-batch')"
+        >
+          Send
+        </button>
+      </span>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Third Batch of Images </mat-panel-title>
+      </mat-expansion-panel-header>
+      <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let result of thirdBatch; index as i">
+          <img mat-card-image [src]="result.src" alt="Forest Image" />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="3">
+        <mat-grid-tile *ngFor="let result of thirdResult; index as i">
+          <img mat-card-image [src]="result.src" alt="Forest Image" />
+        </mat-grid-tile>
+      </mat-grid-list>
+      <div>
+        <hr class="horizontal-line" />
+      </div>
+      <span class="button-container">
+        <button
+          type="button"
+          mat-raised-button
+          color="primary"
+          (click)="sendImages('third-batch')"
+        >
+          Send
+        </button>
+      </span>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+<mat-card></mat-card>

@@ -1,0 +1,19 @@
+<div class="dashboard-container">
+  <div class="header" style="text-align: center">
+    <div>
+      <img class="fire-icon" src="assets/fire-icon.svg" />
+      <span class="header-text">Forest Fire Detection</span>
+    </div>
+  </div>
+  <div class="page">
+    <div class="tab-container">
+      <mat-tab-group mat-align-tabs="center">
+        <mat-tab label="Model"> <app-model-page></app-model-page> </mat-tab>
+        <mat-tab label="Scenario">
+          <app-scenario-page></app-scenario-page>
+        </mat-tab>
+        <mat-tab label="Prediction"><app-prediction></app-prediction> </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
