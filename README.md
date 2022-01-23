@@ -33,5 +33,6 @@ The web service has two main parts:
 * User Interface
 
 The user interface is built for the demonstration of the service hypothesis scenario.
+![Architecture](https://github.com/rohitmokashi16/forest-fire-detection-service/blob/main/images/Architecture.png)
 
 ###
